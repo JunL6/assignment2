@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/step2.py" description="aggregate_data(df_singleid)" line="71" />
+    <bookmark url="file://$PROJECT_DIR$/step1.py" description="aggregate_data(df_singleid)" line="76" />
     <bookmark url="file://$PROJECT_DIR$/venv/comparetime.py" description="print('&lt;300')" line="41" />
     <bookmark url="file://$PROJECT_DIR$/venv/comparetime.py" description="print('&gt;=300')" line="43" />
-    <bookmark url="file://$PROJECT_DIR$/step2.py" description="        # print('i: ', i)&#10;        # print(df_singl..." line="85" />
-    <bookmark url="file://$PROJECT_DIR$/step2.py" description="        # print('i: ', i)&#10;        # print(df_singl..." line="84" />
-    <bookmark url="file://$PROJECT_DIR$/step2.py" description="print('round: ', round)" line="79" />
-    <bookmark url="file://$PROJECT_DIR$/step2.py" description="# print(j_first, ', ', i, ': ', '&lt;300')" line="88" />
-    <bookmark url="file://$PROJECT_DIR$/step2.py" description="# print(j_first, ', ', i, ': ', '&gt;= 300')" line="95" />
-    <bookmark url="file://$PROJECT_DIR$/step2.py" description="print(df_singledc)" line="91" />
-    <bookmark url="file://$PROJECT_DIR$/step2.py" description="print('..........................')" line="92" />
-    <bookmark url="file://$PROJECT_DIR$/step2.py" description="print('...................................')" line="106" />
-    <bookmark url="file://$PROJECT_DIR$/step2.py" description="print(df_singledc)" line="105" />
+    <bookmark url="file://$PROJECT_DIR$/step1.py" description="        # print('i: ', i)&#10;        # print(df_singl..." line="93" />
+    <bookmark url="file://$PROJECT_DIR$/step1.py" description="        # print('i: ', i)&#10;        # print(df_singl..." line="92" />
+    <bookmark url="file://$PROJECT_DIR$/step1.py" description="print('round: ', round)" line="87" />
+    <bookmark url="file://$PROJECT_DIR$/step1.py" description="# print(j_first, ', ', i, ': ', '&lt;300')" line="96" />
+    <bookmark url="file://$PROJECT_DIR$/step1.py" description="# print(j_first, ', ', i, ': ', '&gt;= 300')" line="103" />
+    <bookmark url="file://$PROJECT_DIR$/step1.py" description="print(df_singledc)" line="99" />
+    <bookmark url="file://$PROJECT_DIR$/step1.py" description="print('..........................')" line="100" />
+    <bookmark url="file://$PROJECT_DIR$/step1.py" description="print('...................................')" line="115" />
+    <bookmark url="file://$PROJECT_DIR$/step1.py" description="print(df_singledc)" line="114" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="410e7bab-3d19-43d8-8703-beb86507bebd" name="Default" comment="" />
@@ -28,16 +28,15 @@
       <file leaf-file-name="step1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/step1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+            <state relative-caret-position="203">
+              <caret line="172" column="6" lean-forward="true" selection-start-line="172" selection-start-column="6" selection-end-line="172" selection-end-column="6" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
-                <element signature="e#423#990#0" expanded="false" />
-                <element signature="e#1564#1927#0" expanded="false" />
-                <element signature="e#1995#2698#0" expanded="false" />
-                <element signature="e#2768#3690#0" expanded="false" />
-                <element signature="e#3789#4738#0" expanded="false" />
-                <element signature="e#4793#4928#0" expanded="false" />
+                <element signature="e#475#1042#0" expanded="false" />
+                <element signature="e#2057#2762#0" expanded="false" />
+                <element signature="e#2841#3763#0" expanded="false" />
+                <element signature="e#3869#4818#0" expanded="false" />
+                <element signature="e#5026#5363#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -46,40 +45,15 @@
       <file leaf-file-name="step2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/step2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="175" column="0" lean-forward="true" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
-                <element signature="e#423#990#0" expanded="false" />
-                <element signature="e#1564#1927#0" expanded="false" />
-                <element signature="e#1995#2698#0" expanded="false" />
-                <element signature="e#2768#3690#0" expanded="false" />
-                <element signature="e#3789#4738#0" expanded="false" />
-                <element signature="e#4793#4928#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="convert_location.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/convert_location.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comparetime.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/comparetime.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#475#1042#0" expanded="false" />
+                <element signature="e#2057#2762#0" expanded="false" />
+                <element signature="e#2841#3763#0" expanded="false" />
+                <element signature="e#3869#4818#0" expanded="false" />
+                <element signature="e#5026#5363#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -119,11 +93,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="524" />
-    <option name="y" value="46" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="161" />
+    <option name="y" value="80" />
+    <option name="width" value="1528" />
+    <option name="height" value="884" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -161,13 +135,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="D:/group project/826-project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MAUP" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -186,7 +160,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.step2">
+  <component name="RunManager" selected="Python.step1">
     <configuration name="anything" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -241,6 +215,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="step1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/step1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="step2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -253,24 +245,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="untitled" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/step2.py" />
+      <option name="SCRIPT_NAME" value="D:\assignment\Trip\step1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.anything" />
       <item index="1" class="java.lang.String" itemvalue="Python.getsameid" />
       <item index="2" class="java.lang.String" itemvalue="Python.comparetime" />
       <item index="3" class="java.lang.String" itemvalue="Python.step2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.step1" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.step2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.getsameid" />
-        <item index="2" class="java.lang.String" itemvalue="Python.comparetime" />
-        <item index="3" class="java.lang.String" itemvalue="Python.anything" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.step1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.step2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.getsameid" />
+        <item index="3" class="java.lang.String" itemvalue="Python.comparetime" />
+        <item index="4" class="java.lang.String" itemvalue="Python.anything" />
       </list>
     </recent_temporary>
   </component>
@@ -291,13 +285,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="161" y="80" width="1528" height="884" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.146875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18650794" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30211082" sideWeight="0.46973684" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2545069" sideWeight="0.5302632" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41374838" sideWeight="0.5302632" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282967" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24970274" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -323,12 +317,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -344,10 +338,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step2.py">
+    <entry file="file://$PROJECT_DIR$/step1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="102" column="24" lean-forward="true" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
+        <state relative-caret-position="306">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#475#1042#0" expanded="false" />
+            <element signature="e#2057#2762#0" expanded="false" />
+            <element signature="e#2841#3763#0" expanded="false" />
+            <element signature="e#3869#4818#0" expanded="false" />
+            <element signature="e#5026#5363#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convert_location.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/comparetime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#22#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
             <element signature="e#423#990#0" expanded="false" />
@@ -360,12 +389,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/step1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="102" column="24" lean-forward="true" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#475#1042#0" expanded="false" />
+            <element signature="e#2057#2762#0" expanded="false" />
+            <element signature="e#2841#3763#0" expanded="false" />
+            <element signature="e#3869#4818#0" expanded="false" />
+            <element signature="e#5026#5363#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/convert_location.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -375,12 +419,12 @@
         <state relative-caret-position="323">
           <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1239">
           <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="107" selection-end-column="38" />
@@ -396,18 +440,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step2.py">
+    <entry file="file://$PROJECT_DIR$/step1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#423#990#0" expanded="false" />
-            <element signature="e#1564#1927#0" expanded="false" />
-            <element signature="e#1995#2698#0" expanded="false" />
-            <element signature="e#2768#3690#0" expanded="false" />
-            <element signature="e#3789#4738#0" expanded="false" />
-            <element signature="e#4793#4928#0" expanded="false" />
+            <element signature="e#475#1042#0" expanded="false" />
+            <element signature="e#2057#2762#0" expanded="false" />
+            <element signature="e#2841#3763#0" expanded="false" />
+            <element signature="e#3869#4818#0" expanded="false" />
+            <element signature="e#5026#5363#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -417,7 +460,7 @@
         <state relative-caret-position="399">
           <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -427,12 +470,12 @@
         <state relative-caret-position="42">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1558">
           <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="111" selection-end-column="21" />
@@ -453,28 +496,27 @@
         <state relative-caret-position="1254">
           <caret line="68" column="23" lean-forward="false" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/step2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
-          <caret line="119" column="36" lean-forward="true" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#423#990#0" expanded="false" />
-            <element signature="e#1564#1927#0" expanded="false" />
-            <element signature="e#1995#2698#0" expanded="false" />
-            <element signature="e#2768#3690#0" expanded="false" />
-            <element signature="e#3789#4738#0" expanded="false" />
-            <element signature="e#4793#4928#0" expanded="false" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/step1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1843">
+          <caret line="119" column="36" lean-forward="true" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#475#1042#0" expanded="false" />
+            <element signature="e#2057#2762#0" expanded="false" />
+            <element signature="e#2841#3763#0" expanded="false" />
+            <element signature="e#3869#4818#0" expanded="false" />
+            <element signature="e#5026#5363#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1558">
           <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="111" selection-end-column="21" />
@@ -495,28 +537,27 @@
         <state relative-caret-position="703">
           <caret line="39" column="96" lean-forward="false" selection-start-line="39" selection-start-column="96" selection-end-line="39" selection-end-column="96" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/step2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#423#990#0" expanded="false" />
-            <element signature="e#1564#1927#0" expanded="false" />
-            <element signature="e#1995#2698#0" expanded="false" />
-            <element signature="e#2768#3690#0" expanded="false" />
-            <element signature="e#3789#4738#0" expanded="false" />
-            <element signature="e#4793#4928#0" expanded="false" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/step1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#475#1042#0" expanded="false" />
+            <element signature="e#2057#2762#0" expanded="false" />
+            <element signature="e#2841#3763#0" expanded="false" />
+            <element signature="e#3869#4818#0" expanded="false" />
+            <element signature="e#5026#5363#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1558">
           <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="111" selection-end-column="21" />
@@ -532,18 +573,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step2.py">
+    <entry file="file://$PROJECT_DIR$/step1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1159">
           <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="68" selection-end-column="24" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#423#990#0" expanded="false" />
-            <element signature="e#1564#1927#0" expanded="false" />
-            <element signature="e#1995#2698#0" expanded="false" />
-            <element signature="e#2768#3690#0" expanded="false" />
-            <element signature="e#3789#4738#0" expanded="false" />
-            <element signature="e#4793#4928#0" expanded="false" />
+            <element signature="e#475#1042#0" expanded="false" />
+            <element signature="e#2057#2762#0" expanded="false" />
+            <element signature="e#2841#3763#0" expanded="false" />
+            <element signature="e#3869#4818#0" expanded="false" />
+            <element signature="e#5026#5363#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -553,12 +593,12 @@
         <state relative-caret-position="608">
           <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1558">
           <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="111" selection-end-column="21" />
@@ -574,18 +614,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step2.py">
+    <entry file="file://$PROJECT_DIR$/step1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1197">
           <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="68" selection-end-column="24" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#423#990#0" expanded="false" />
-            <element signature="e#1564#1927#0" expanded="false" />
-            <element signature="e#1995#2698#0" expanded="false" />
-            <element signature="e#2768#3690#0" expanded="false" />
-            <element signature="e#3789#4738#0" expanded="false" />
-            <element signature="e#4793#4928#0" expanded="false" />
+            <element signature="e#475#1042#0" expanded="false" />
+            <element signature="e#2057#2762#0" expanded="false" />
+            <element signature="e#2841#3763#0" expanded="false" />
+            <element signature="e#3869#4818#0" expanded="false" />
+            <element signature="e#5026#5363#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -595,12 +634,12 @@
         <state relative-caret-position="798">
           <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1558">
           <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="111" selection-end-column="21" />
@@ -616,23 +655,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step2.py">
+    <entry file="file://$PROJECT_DIR$/step1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="893">
           <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#423#990#0" expanded="false" />
-            <element signature="e#1564#1927#0" expanded="false" />
-            <element signature="e#1995#2698#0" expanded="false" />
-            <element signature="e#2768#3690#0" expanded="false" />
-            <element signature="e#3789#4738#0" expanded="false" />
-            <element signature="e#4793#4928#0" expanded="false" />
+            <element signature="e#475#1042#0" expanded="false" />
+            <element signature="e#2057#2762#0" expanded="false" />
+            <element signature="e#2841#3763#0" expanded="false" />
+            <element signature="e#3869#4818#0" expanded="false" />
+            <element signature="e#5026#5363#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1558">
           <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="111" selection-end-column="21" />
@@ -648,23 +686,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step2.py">
+    <entry file="file://$PROJECT_DIR$/step1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1197">
           <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#423#990#0" expanded="false" />
-            <element signature="e#1564#1927#0" expanded="false" />
-            <element signature="e#1995#2698#0" expanded="false" />
-            <element signature="e#2768#3690#0" expanded="false" />
-            <element signature="e#3789#4738#0" expanded="false" />
-            <element signature="e#4793#4928#0" expanded="false" />
+            <element signature="e#475#1042#0" expanded="false" />
+            <element signature="e#2057#2762#0" expanded="false" />
+            <element signature="e#2841#3763#0" expanded="false" />
+            <element signature="e#3869#4818#0" expanded="false" />
+            <element signature="e#5026#5363#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -680,7 +717,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -696,7 +733,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -712,7 +749,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -728,7 +765,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -744,7 +781,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -760,7 +797,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -776,7 +813,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -792,7 +829,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -808,7 +845,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
           <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
@@ -824,7 +861,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -840,7 +877,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -856,7 +893,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -872,7 +909,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -888,7 +925,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
+    <entry file="file://$PROJECT_DIR$/step0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -915,52 +952,66 @@
     <entry file="file://$PROJECT_DIR$/1517363974672.png" />
     <entry file="file://$PROJECT_DIR$/venv/comparetime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="323">
           <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/convert_location.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="17">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#423#990#0" expanded="false" />
+            <element signature="e#1564#1927#0" expanded="false" />
+            <element signature="e#1995#2698#0" expanded="false" />
+            <element signature="e#2768#3690#0" expanded="false" />
+            <element signature="e#3789#4738#0" expanded="false" />
+            <element signature="e#4793#4928#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/step2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="288">
+          <caret line="175" column="0" lean-forward="true" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#423#990#0" expanded="false" />
-            <element signature="e#1564#1927#0" expanded="false" />
-            <element signature="e#1995#2698#0" expanded="false" />
-            <element signature="e#2768#3690#0" expanded="false" />
-            <element signature="e#3789#4738#0" expanded="false" />
-            <element signature="e#4793#4928#0" expanded="false" />
+            <element signature="e#475#1042#0" expanded="false" />
+            <element signature="e#2057#2762#0" expanded="false" />
+            <element signature="e#2841#3763#0" expanded="false" />
+            <element signature="e#3869#4818#0" expanded="false" />
+            <element signature="e#5026#5363#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/step1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        <state relative-caret-position="203">
+          <caret line="172" column="6" lean-forward="true" selection-start-line="172" selection-start-column="6" selection-end-line="172" selection-end-column="6" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#423#990#0" expanded="false" />
-            <element signature="e#1564#1927#0" expanded="false" />
-            <element signature="e#1995#2698#0" expanded="false" />
-            <element signature="e#2768#3690#0" expanded="false" />
-            <element signature="e#3789#4738#0" expanded="false" />
-            <element signature="e#4793#4928#0" expanded="false" />
+            <element signature="e#475#1042#0" expanded="false" />
+            <element signature="e#2057#2762#0" expanded="false" />
+            <element signature="e#2841#3763#0" expanded="false" />
+            <element signature="e#3869#4818#0" expanded="false" />
+            <element signature="e#5026#5363#0" expanded="false" />
           </folding>
         </state>
       </provider>

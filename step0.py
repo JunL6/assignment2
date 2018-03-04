@@ -1,7 +1,6 @@
 import mysql.connector
 from mysql.connector import Error
 import pandas as pd
-from pyproj import Proj
 
 #display dataframe
 pd.set_option('display.height',1000)
@@ -12,7 +11,6 @@ pd.set_option('display.width',1000)
 #global dataframe
 df_origindata = pd.DataFrame()
 df_aggregateddata = pd.DataFrame(columns=['user_id', 'lat', 'lon', 'record_time'])
-df_bindata = pd.DataFrame()
 
 ### get data
 def connectdatabase():
@@ -40,15 +38,12 @@ sql_gpsdata_filter50_saskatoon = 'select T2.user_id, T2.lat, T2.lon, T2.provider
 def get_data(cursor):
     cursor.execute(sql_gpsdata_filter50_saskatoon)
     global df_origindata
-    # df_origindata = df_origindata.append(cursor.fetchmany(127945))
-    df_origindata = df_origindata.append(cursor.fetchmany(9999))
+    df_origindata = df_origindata.append(cursor.fetchmany(127945))
+    #df_origindata = df_origindata.append(cursor.fetchmany(9999))
     # df_origindata = df_origindata.append(cursor.fetchall())
     df_origindata.columns = ['user_id', 'lat', 'lon', 'provider', 'accu', 'record_time', 'date']
 
-
-'''
 ### get same id record in one dataframe
-'''
 def contain_sameid():
     # df_singleid = pd.DataFrame()
     global df_origindata
@@ -60,7 +55,7 @@ def contain_sameid():
         df_one_user = df_origindata.loc[df_origindata['user_id'] == id]
         aggregate_data(df_one_user)
 
-    # print(df_aggregateddata)
+    print(df_aggregateddata)
 
     # i = 1
     #
@@ -76,10 +71,7 @@ def contain_sameid():
     #
     # aggregate_data(df_singleid)
 ###
-
-'''
 #function: aggregate gps data
-'''
 def aggregate_data(df_sameid):
     i = df_sameid.head(1).index.values[0]
     j_first = i
@@ -108,9 +100,8 @@ def aggregate_data(df_sameid):
         i = i+1
 
 
-'''
+
 #function: aggregate gps data within same ducy circle
-'''
 def aggregate_singledc(df_singledc):
     # print(df_singledc)
     # print('...................................')
@@ -137,27 +128,7 @@ def aggregate_singledc(df_singledc):
         # print(df_singleaggregateddate)
         df_aggregateddata = df_aggregateddata.append(df_singleaggregateddate)
 
-'''
-    convert UTM to cells in the grid of size 100m
-'''
-def binner(x, y):
-    return (x-378999.99781991803)/100, (y-5768999.910592335)/100
 
-'''
-    convert lat, lon to UTM
-'''
-def convert_coord(df):
-
-    # UTM code for Saskatoon
-    p = Proj(init='EPSG:32613')
-
-    # Converts from lat/long gps to UTM coordinates
-    df['xord'], df['yord'] = p(df["lon"].values, df["lat"].values)
-    df['xBin'], df['yBin'] = binner(df["xord"].values, df["yord"].values)
-    df['xBin'] = df['xBin'].round()
-    df['yBin'] = df['yBin'].round()
-
-    return df
 
 
 
@@ -168,10 +139,5 @@ if __name__ == '__main__':
     #  aggregate the data
     contain_sameid()
 #   convert the gps data to UTM
-    df_bindata = convert_coord(df_aggregateddata)
-
-# test
-    df_bindata = df_bindata.reindex(range(0,len(df_bindata)))
-    print(len(df_bindata))
-    print(df_bindata)
+    pass
 #    generate a heatmap
