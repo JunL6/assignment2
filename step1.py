@@ -171,7 +171,7 @@ if __name__ == '__main__':
     df_bindata = convert_coord(df_aggregateddata)
 
 # test
-    df_bindata = df_bindata.reindex(range(0,len(df_bindata)))
-    print(len(df_bindata))
-    print(df_bindata)
+#     df_bindata = df_bindata.reindex(range(0,len(df_bindata)))
+#     print(len(df_bindata))
+#     print(df_bindata)
 #    generate a heatmap

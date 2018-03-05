@@ -14,6 +14,7 @@ df_origindata = pd.DataFrame()
 df_aggregateddata = pd.DataFrame(columns=['user_id', 'lat', 'lon', 'record_time'])
 df_bindata = pd.DataFrame()
 
+
 ### get data
 def connectdatabase():
     try:
@@ -42,6 +43,7 @@ def get_data(cursor):
     global df_origindata
     # df_origindata = df_origindata.append(cursor.fetchmany(127945))
     df_origindata = df_origindata.append(cursor.fetchmany(9999))
+    # df_origindata = df_origindata.append(cursor.fetchmany(999))
     # df_origindata = df_origindata.append(cursor.fetchall())
     df_origindata.columns = ['user_id', 'lat', 'lon', 'provider', 'accu', 'record_time', 'date']
 
@@ -159,17 +161,149 @@ def convert_coord(df):
 
     return df
 
+'''
+    operationalization for N = 1
+'''
+def define_trip(df_bin):
+    #1. get same id
+    for id in df_bin['user_id'].unique():
+        df_one_id = df_bin.loc[df_bin['user_id'] == id]
+
+        #2. get the trip: loop: compare the x, y of the current record with that of the next record
+        list_triptable_1 = []   #a list to store the trip table, will be convert into dataframe later
+        skip = 0
+        num_cells = 0
+        # num_cells = 1
+        x_pre = -1
+        y_pre = -1
+        for  index, row in df_one_id.iterrows():
+             # print(row['user_id'], row['xBin'], row['yBin'], row['record_time'])
+             # '''
+            if(skip == 0):
+                skip = 1
+                time_start = row['record_time']
+                x_pre, y_pre = row['xBin'], row['yBin']
+                continue
+            if(skip == 2):
+                if(x_pre == row['xBin'] and y_pre == row['yBin']):
+                    time_start = row['record_time']
+                    continue
+                else:
+                    x_pre = row['xBin']
+                    y_pre = row['yBin']
+                    skip = 1
+                    num_cells = num_cells + 1
+                    time_end = row['record_time']
+                    continue
+
+            if(row['xBin'] == x_pre and row['yBin'] == y_pre and skip == 1):   #trip ends
+                #1.get the duration of this trip
+                duration = (time_end - time_start).total_seconds()/60
+                #2.put this trip into list_triptable
+                list_onetrip = [row['user_id'], num_cells, duration]
+                list_triptable_1.append(list_onetrip)
+                print(list_onetrip)
+                #3. reset the varibales
+                num_cells = 0
+                # num_cells = 1
+                skip = 2
+                time_start = row['record_time']
+            else:
+                num_cells = num_cells + 1
+                x_pre, y_pre = row['xBin'], row['yBin']
+                time_end = row['record_time']
+
+            print(row['xBin'], row['yBin'], row['record_time'], ", skip: ", skip, ", num_cell: ", num_cells)
+
+    # print(list_triptable)
+    return list_triptable_1
+    # print('    ')
+    # print(df_triptable_1)
+    #          '''
+
+def define_trip_3(df_bin):
+    #1. get same id
+    for id in df_bin['user_id'].unique():
+        df_one_id = df_bin.loc[df_bin['user_id'] == id]
+
+        #2. get the trip: loop: compare the x, y of the current record with that of the next record
+        list_triptable_3 = []   #a list to store the trip table, will be convert into dataframe later
+        skip = 0
+        num_cells = 0
+        # num_cells = 1
+        x_pre = -1
+        y_pre = -1
+        n_stop = 1
+        for  index, row in df_one_id.iterrows():
+             # print(row['user_id'], row['xBin'], row['yBin'], row['record_time'])
+             # '''
+            if(skip == 0):
+                skip = 1
+                time_start = row['record_time']
+                x_pre, y_pre = row['xBin'], row['yBin']
+                continue
+            if(skip == 2):
+                if(x_pre == row['xBin'] and y_pre == row['yBin']):
+                    time_start = row['record_time']
+                    continue
+                else:
+                    x_pre = row['xBin']
+                    y_pre = row['yBin']
+                    skip = 1
+                    num_cells = num_cells + 1
+                    time_end = row['record_time']
+                    continue
+
+            if(row['xBin'] == x_pre and row['yBin'] == y_pre and skip == 1):   #location is the same with last record
+                #0. check if n_stop is 3 already
+                if(n_stop <= 2):
+                    x_pre, y_pre = row['xBin'], row['yBin']
+                    time_end = row['record_time']
+                    n_stop = n_stop + 1
+                else:
+                    #1.get the duration of this trip
+                    duration = (time_end - time_start).total_seconds()/60
+                    #2.put this trip into list_triptable
+                    list_onetrip = [row['user_id'], num_cells, duration]
+                    list_triptable_3.append(list_onetrip)
+                    print(list_onetrip)
+                    #3. reset the varibales
+                    num_cells = 0
+                    # num_cells = 1
+                    skip = 2
+                    time_start = row['record_time']
+                    n_stop = 1
+            else:
+                num_cells = num_cells + 1
+                x_pre, y_pre = row['xBin'], row['yBin']
+                time_end = row['record_time']
+                n_stop = 1
+
+
+            print(row['xBin'], row['yBin'], row['record_time'], ", skip: ", skip, ", num_cell: ", num_cells, ", n_stop: ", n_stop)
+    # print(list_triptable)
+    return list_triptable_3
+    # print('    ')
+    # print(df_triptable_1)
+    #
 
 
 ### main function
 if __name__ == '__main__':
     # connect to the database
     connectdatabase()
+
     #  aggregate the data
+    print("Start aggregation...")
     contain_sameid()
 #   convert the gps data to UTM
     df_bindata = convert_coord(df_aggregateddata)
-
+    print("Aggregation Finished!!!")
 # test
-    print(df_bindata)
+#     print(df_bindata)
 
+#  operationalization
+    df_trip_1 = pd.DataFrame(data=define_trip(df_bindata), columns=['user_id', 'trip_num', 'duration'])
+    # print(df_trip_1)
+    # df_trip_3 = pd.DataFrame(data=define_trip_3(df_bindata), columns=['user_id', 'trip_num', 'duration'])
+    # df_trip_5 = pd.DataFrame(data=define_trip_5(), columns=['user_id', 'trip_num', 'duration'])
