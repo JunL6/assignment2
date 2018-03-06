@@ -139,6 +139,45 @@ def aggregate_singledc(df_singledc):
         # print(df_singleaggregateddate)
         df_aggregateddata = df_aggregateddata.append(df_singleaggregateddate)
 
+
+# This function aggregates the spatial position of all records within one duty cycle (5 minutes)
+def aggregate_over_dutycycle(gps_traces):
+   # We aggregate the GPS data by time, taking the average location every duty cycle
+   # Loop through and if difference is greater than 300 seconds set new limit and take average and store in DF
+   duty_cycle_aggregated = []
+
+   # get Records for every user id
+   for user_id in gps_traces.user_id.unique():
+       # Sort the records based on record_time so we get in a sequential order
+       gps_data_for_specific_user = gps_traces.loc[gps_traces['user_id'] == user_id].sort_values('record_time')
+       # Let the first record be the threshold
+       threshold_time = gps_data_for_specific_user.iloc[0].record_time
+       aggregated_value = []
+
+       # Every time we get a record that has a time difference of less than 250 seconds
+       # than the threshold it means the record is in the same duty cycle so add it to store
+       # if the difference is more it means we have switched to the next duty cycle so aggregate all values in the
+       # store and update the threshold time to the new value
+       for row in gps_data_for_specific_user.itertuples():
+           if (row.record_time - threshold_time).total_seconds() > 270:
+               temp_store = [float(sum(col)) / len(col) for col in zip(*aggregated_value)]
+               duty_cycle_aggregated.append([user_id, threshold_time, temp_store[0], temp_store[1]])
+               threshold_time = row.record_time
+               aggregated_value = [[row.lat, row.lon]]
+           else:
+               aggregated_value.append([row.lat, row.lon])
+
+       # Remaining values are pushed if any
+       if len(aggregated_value) >= 1:
+           temp_store = [float(sum(col)) / len(col) for col in zip(*aggregated_value)]
+           duty_cycle_aggregated.append([user_id, threshold_time, temp_store[0], temp_store[1]])
+
+   print("Aggregation Complete")
+   # convert the list to a dataframe
+   return pd.DataFrame(duty_cycle_aggregated, columns=["user_id", "record_time", "lat", "lon"])
+
+
+
 '''
     convert UTM to cells in the grid of size 100m
 '''
@@ -321,13 +360,16 @@ def define_trip_5(df_bin):
 
 ### main function
 if __name__ == '__main__':
-    # connect to the database
+#### connect to the database
     connectdatabase()
 
-    #  aggregate the data
+####  aggregate the data
     print("Start aggregation...")
-    contain_sameid()
-#   convert the gps data to UTM
+    # contain_sameid()
+
+    df_aggregateddata = aggregate_over_dutycycle(df_origindata)
+    # print(df_aggregateddata)
+####   convert the gps data to UTM
     df_bindata = convert_coord(df_aggregateddata)
     print("Aggregation Finished!!!")
 # test
@@ -336,9 +378,10 @@ if __name__ == '__main__':
 
 #  operationalization
 
-    # # N = 1
-    # df_trip_1 = pd.DataFrame(data=define_trip(df_bindata), columns=['user_id', 'trip_num', 'duration'])
-    # print(df_trip_1)
+# #### N = 1
+#     df_trip_1 = pd.DataFrame(data=define_trip(df_bindata), columns=['user_id', 'trip_num', 'duration'])
+#     print('_________________________________trip table N=1___________________________________')
+#     print(df_trip_1)
 
 
     # #N = 3

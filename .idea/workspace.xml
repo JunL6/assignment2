@@ -28,7 +28,7 @@
       <file leaf-file-name="step1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/step1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
+            <state relative-caret-position="156">
               <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
@@ -45,15 +45,52 @@
       <file leaf-file-name="step2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/step2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="296" column="31" lean-forward="false" selection-start-line="296" selection-start-column="31" selection-end-line="296" selection-end-column="31" />
+            <state relative-caret-position="229">
+              <caret line="173" column="21" lean-forward="true" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
                 <element signature="e#476#1043#0" expanded="false" />
                 <element signature="e#2124#2829#0" expanded="false" />
+                <element signature="e#2908#3830#0" expanded="false" />
                 <element signature="e#3936#4885#0" expanded="false" />
+                <element signature="e#4967#5027#0" expanded="false" />
                 <element signature="e#5093#5430#0" expanded="false" />
-                <element signature="e#7708#10293#0" expanded="false" />
+                <element signature="e#7156#9301#0" expanded="false" />
+                <element signature="e#9335#11480#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="step3.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/step3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="868">
+              <caret line="369" column="63" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="395" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#476#1043#0" expanded="false" />
+                <element signature="e#2124#2829#0" expanded="false" />
+                <element signature="e#2908#3830#0" expanded="false" />
+                <element signature="e#3936#4885#0" expanded="false" />
+                <element signature="e#7052#7112#0" expanded="false" />
+                <element signature="e#7178#7515#0" expanded="false" />
+                <element signature="e#7587#9208#0" expanded="false" />
+                <element signature="e#9241#11386#0" expanded="false" />
+                <element signature="e#11420#13565#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="temp_store.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/temp_store.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-279">
+              <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+              <folding>
+                <element signature="e#70#2234#0" expanded="false" />
+                <element signature="e#2269#4854#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -89,16 +126,18 @@
         <option value="$PROJECT_DIR$/venv/comparetime.py" />
         <option value="$PROJECT_DIR$/convert_location.py" />
         <option value="$PROJECT_DIR$/getsameid.py" />
-        <option value="$PROJECT_DIR$/step2.py" />
         <option value="$PROJECT_DIR$/step1.py" />
+        <option value="$PROJECT_DIR$/temp_store.py" />
+        <option value="$PROJECT_DIR$/step3.py" />
+        <option value="$PROJECT_DIR$/step2.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-320" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="354" />
+    <option name="y" value="2" />
+    <option name="width" value="1434" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -116,19 +155,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="assignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Trip" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Trip" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -152,26 +191,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.step2 (1)">
-    <configuration name="comparetime" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="untitled" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/comparetime.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="getsameid" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.step3">
+    <configuration name="maup" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -183,7 +204,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="untitled" />
-      <option name="SCRIPT_NAME" value="C:\Users\Jun\PycharmProjects\untitled\step2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/maup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -243,20 +264,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="step3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/step3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.getsameid" />
-      <item index="1" class="java.lang.String" itemvalue="Python.comparetime" />
-      <item index="2" class="java.lang.String" itemvalue="Python.step2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.step1" />
-      <item index="4" class="java.lang.String" itemvalue="Python.step2 (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Python.step2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.step1" />
+      <item index="2" class="java.lang.String" itemvalue="Python.step2 (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.maup" />
+      <item index="4" class="java.lang.String" itemvalue="Python.step3" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.step2 (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.step1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.step2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.getsameid" />
-        <item index="4" class="java.lang.String" itemvalue="Python.comparetime" />
+        <item index="0" class="java.lang.String" itemvalue="Python.step3" />
+        <item index="1" class="java.lang.String" itemvalue="Python.step2 (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.maup" />
+        <item index="3" class="java.lang.String" itemvalue="Python.step1" />
+        <item index="4" class="java.lang.String" itemvalue="Python.step2" />
       </list>
     </recent_temporary>
   </component>
@@ -277,12 +316,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-320" width="1936" height="1056" extended-state="6" />
+    <frame x="354" y="2" width="1434" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.146875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19887166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30211082" sideWeight="0.46973684" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8653234" sideWeight="0.5302632" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1319053" sideWeight="0.5302632" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282967" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24970274" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -327,40 +367,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/step0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/step1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#475#1042#0" expanded="false" />
-            <element signature="e#2057#2762#0" expanded="false" />
-            <element signature="e#2841#3763#0" expanded="false" />
-            <element signature="e#3869#4818#0" expanded="false" />
-            <element signature="e#5026#5363#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert_location.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/comparetime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -759,9 +770,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/maup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="132" column="21" lean-forward="true" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#22#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/step1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
+        <state relative-caret-position="156">
           <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
@@ -774,17 +795,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step2.py">
+    <entry file="file://$PROJECT_DIR$/temp_store.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="296" column="31" lean-forward="false" selection-start-line="296" selection-start-column="31" selection-end-line="296" selection-end-column="31" />
+        <state relative-caret-position="-279">
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding>
+            <element signature="e#70#2234#0" expanded="false" />
+            <element signature="e#2269#4854#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="369" column="63" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="395" selection-end-column="0" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
             <element signature="e#476#1043#0" expanded="false" />
             <element signature="e#2124#2829#0" expanded="false" />
+            <element signature="e#2908#3830#0" expanded="false" />
             <element signature="e#3936#4885#0" expanded="false" />
+            <element signature="e#7052#7112#0" expanded="false" />
+            <element signature="e#7178#7515#0" expanded="false" />
+            <element signature="e#7587#9208#0" expanded="false" />
+            <element signature="e#9241#11386#0" expanded="false" />
+            <element signature="e#11420#13565#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="173" column="21" lean-forward="true" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#476#1043#0" expanded="false" />
+            <element signature="e#2124#2829#0" expanded="false" />
+            <element signature="e#2908#3830#0" expanded="false" />
+            <element signature="e#3936#4885#0" expanded="false" />
+            <element signature="e#4967#5027#0" expanded="false" />
             <element signature="e#5093#5430#0" expanded="false" />
-            <element signature="e#7708#10293#0" expanded="false" />
+            <element signature="e#7156#9301#0" expanded="false" />
+            <element signature="e#9335#11480#0" expanded="false" />
           </folding>
         </state>
       </provider>
