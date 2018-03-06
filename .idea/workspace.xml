@@ -28,7 +28,7 @@
       <file leaf-file-name="step1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/step1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
+            <state relative-caret-position="969">
               <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
@@ -42,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="step2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="step2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/step2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="173" column="21" lean-forward="true" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
+            <state relative-caret-position="144">
+              <caret line="168" column="19" lean-forward="false" selection-start-line="168" selection-start-column="19" selection-end-line="168" selection-end-column="19" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
                 <element signature="e#476#1043#0" expanded="false" />
@@ -62,22 +62,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="step3.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="step3.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/step3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="868">
-              <caret line="369" column="63" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="395" selection-end-column="0" />
+            <state relative-caret-position="493">
+              <caret line="249" column="41" lean-forward="true" selection-start-line="249" selection-start-column="41" selection-end-line="249" selection-end-column="41" />
               <folding>
-                <element signature="e#0#22#0" expanded="true" />
-                <element signature="e#476#1043#0" expanded="false" />
-                <element signature="e#2124#2829#0" expanded="false" />
-                <element signature="e#2908#3830#0" expanded="false" />
-                <element signature="e#3936#4885#0" expanded="false" />
-                <element signature="e#7052#7112#0" expanded="false" />
-                <element signature="e#7178#7515#0" expanded="false" />
-                <element signature="e#7587#9208#0" expanded="false" />
-                <element signature="e#9241#11386#0" expanded="false" />
-                <element signature="e#11420#13565#0" expanded="false" />
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#1145#1712#0" expanded="false" />
+                <element signature="e#2793#3498#0" expanded="false" />
+                <element signature="e#3577#4499#0" expanded="false" />
+                <element signature="e#4605#5554#0" expanded="false" />
+                <element signature="e#5699#7637#0" expanded="false" />
+                <element signature="e#7721#7781#0" expanded="false" />
+                <element signature="e#7847#8184#0" expanded="false" />
+                <element signature="e#10364#12509#0" expanded="false" />
+                <element signature="e#12543#14688#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -86,7 +86,7 @@
       <file leaf-file-name="temp_store.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/temp_store.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-279">
+            <state relative-caret-position="170">
               <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
               <folding>
                 <element signature="e#70#2234#0" expanded="false" />
@@ -128,8 +128,8 @@
         <option value="$PROJECT_DIR$/getsameid.py" />
         <option value="$PROJECT_DIR$/step1.py" />
         <option value="$PROJECT_DIR$/temp_store.py" />
-        <option value="$PROJECT_DIR$/step3.py" />
         <option value="$PROJECT_DIR$/step2.py" />
+        <option value="$PROJECT_DIR$/step3.py" />
       </list>
     </option>
   </component>
@@ -155,7 +155,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,7 +167,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,7 +322,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19887166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30211082" sideWeight="0.46973684" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1319053" sideWeight="0.5302632" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1319053" sideWeight="0.5302632" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282967" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24970274" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -782,7 +782,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/step1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
+        <state relative-caret-position="969">
           <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
@@ -797,7 +797,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/temp_store.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279">
+        <state relative-caret-position="170">
           <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding>
             <element signature="e#70#2234#0" expanded="false" />
@@ -806,29 +806,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/step3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="868">
-          <caret line="369" column="63" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="395" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#476#1043#0" expanded="false" />
-            <element signature="e#2124#2829#0" expanded="false" />
-            <element signature="e#2908#3830#0" expanded="false" />
-            <element signature="e#3936#4885#0" expanded="false" />
-            <element signature="e#7052#7112#0" expanded="false" />
-            <element signature="e#7178#7515#0" expanded="false" />
-            <element signature="e#7587#9208#0" expanded="false" />
-            <element signature="e#9241#11386#0" expanded="false" />
-            <element signature="e#11420#13565#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/step2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="173" column="21" lean-forward="true" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
+        <state relative-caret-position="144">
+          <caret line="168" column="19" lean-forward="false" selection-start-line="168" selection-start-column="19" selection-end-line="168" selection-end-column="19" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
             <element signature="e#476#1043#0" expanded="false" />
@@ -839,6 +820,25 @@
             <element signature="e#5093#5430#0" expanded="false" />
             <element signature="e#7156#9301#0" expanded="false" />
             <element signature="e#9335#11480#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="249" column="41" lean-forward="true" selection-start-line="249" selection-start-column="41" selection-end-line="249" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#1145#1712#0" expanded="false" />
+            <element signature="e#2793#3498#0" expanded="false" />
+            <element signature="e#3577#4499#0" expanded="false" />
+            <element signature="e#4605#5554#0" expanded="false" />
+            <element signature="e#5699#7637#0" expanded="false" />
+            <element signature="e#7721#7781#0" expanded="false" />
+            <element signature="e#7847#8184#0" expanded="false" />
+            <element signature="e#10364#12509#0" expanded="false" />
+            <element signature="e#12543#14688#0" expanded="false" />
           </folding>
         </state>
       </provider>

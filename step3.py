@@ -1,3 +1,10 @@
+import numpy as np
+import pandas as pd
+from scipy import stats, integrate
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set(color_codes=True)
+
 import mysql.connector
 from mysql.connector import Error
 import pandas as pd
@@ -13,7 +20,31 @@ pd.set_option('display.width',1000)
 df_origindata = pd.DataFrame()
 df_aggregateddata = pd.DataFrame(columns=['user_id', 'lat', 'lon', 'record_time'])
 df_bindata = pd.DataFrame()
+#global matrix(2d array)
+# matrix to store the points in trips, for heatmap plot
+# N = 1
+matrix_grid_1 = []
+for i in range(0, 171):
+    row = []
+    for j in range(0, 171):
+        row.append(0)
+    matrix_grid_1.append(row)
 
+# N = 3
+matrix_grid_3 = []
+for i in range(0, 171):
+    row = []
+    for j in range(0, 171):
+        row.append(0)
+    matrix_grid_3.append(row)
+
+# N = 5
+matrix_grid_5 = []
+for i in range(0, 171):
+    row = []
+    for j in range(0, 171):
+        row.append(0)
+    matrix_grid_5.append(row)
 
 ### get data
 def connectdatabase():
@@ -42,9 +73,9 @@ def get_data(cursor):
     cursor.execute(sql_gpsdata_filter50_saskatoon)
     global df_origindata
     # df_origindata = df_origindata.append(cursor.fetchmany(127945))
-    df_origindata = df_origindata.append(cursor.fetchmany(9999))
+    # df_origindata = df_origindata.append(cursor.fetchmany(9999))
     # df_origindata = df_origindata.append(cursor.fetchmany(999))
-    # df_origindata = df_origindata.append(cursor.fetchall())
+    df_origindata = df_origindata.append(cursor.fetchall())
     df_origindata.columns = ['user_id', 'lat', 'lon', 'provider', 'accu', 'record_time', 'date']
 
 
@@ -204,6 +235,10 @@ def convert_coord(df):
     operationalization for N = 1
 '''
 def define_trip(df_bin):
+    # claim global var
+    global matrix_grid_1
+
+
     list_triptable_1 = []   #a list to store the trip table, will be convert into dataframe later
     #1. get same id
     for id in df_bin['user_id'].unique():
@@ -220,11 +255,13 @@ def define_trip(df_bin):
             #
             # print(row['user_id'], row['xBin'], row['yBin'], row['record_time'])
             if(row['xBin']==x_pre and row['yBin']==y_pre):
-                if(num_cells == 0):
+                if(num_cells == 0):    #trip has not started
                     time_start = row['record_time']
-                else:
+                else:                  #trip ends
                     #1. calculate duration
                     duration = (time_end - time_start).total_seconds()/60
+                    if (x_pre <= 170 and y_pre <= 170):
+                        matrix_grid_1[int(x_pre)][int(y_pre)] = matrix_grid_1[int(x_pre)][int(y_pre)] + 1
                     #2. store one trip record
                     list_onetrip = [row['user_id'], num_cells, duration]
                     #
@@ -233,13 +270,15 @@ def define_trip(df_bin):
                     #3. reset
                     num_cells = 0
                     time_start = row['record_time']
-            else:
+            else:                      #on the trip
                 time_end = row['record_time']
                 num_cells = num_cells + 1
+                if(x_pre <= 170 and y_pre <= 170):
+                    matrix_grid_1[int(x_pre)][int(y_pre)] = matrix_grid_1[int(x_pre)][int(y_pre)] + 1
                 x_pre = row['xBin']
                 y_pre = row['yBin']
 
-        print(list_triptable_1)
+        # print(list_triptable_1)
     # print(list_triptable)
     return list_triptable_1
     # print('    ')
@@ -357,6 +396,21 @@ def define_trip_5(df_bin):
     # print(df_triptable_1)
     #
 
+def convert2distance(count_cells):
+    return count_cells * 100
+
+
+#### function: from triptable get a dataframe for trip number of each participant
+def get_tripnumber(df_triptable):
+    list_counttrip = []
+    for id in df_triptable['user_id'].unique():
+        df_one_id = df_triptable.loc[df_triptable['user_id'] == id]
+        list_oneid = [id, len(df_one_id)]
+        list_counttrip.append(list_oneid)
+    df_counttrip = pd.DataFrame(data=list_counttrip, columns=['user_id', 'count_trip'])
+    #
+    df_counttrip.sort_values(by=['count_trip'], inplace=True)
+    return df_counttrip
 
 ### main function
 if __name__ == '__main__':
@@ -373,23 +427,109 @@ if __name__ == '__main__':
     df_bindata = convert_coord(df_aggregateddata)
     print("Aggregation Finished!!!")
 # test
-    print("_____________df_bindata_________________")
-    print(df_bindata)
+#     print("_____________df_bindata_________________")
+#     print(df_bindata)
 
 #  operationalization
 
 # #### N = 1
-#     df_trip_1 = pd.DataFrame(data=define_trip(df_bindata), columns=['user_id', 'trip_num', 'duration'])
-#     print('_________________________________trip table N=1___________________________________')
-#     print(df_trip_1)
+    df_trip_1 = pd.DataFrame(data=define_trip(df_bindata), columns=['user_id', 'trip_num', 'duration'])
+    # print('_________________________________trip table N=1___________________________________')
+    # print(df_trip_1)
+    print('_________________________matrix N = 1_____________________________________________')
+    print(matrix_grid_1)
 
 
-    # #N = 3
+    #N = 3
     # print('             ')
-    # df_trip_3 = pd.DataFrame(data=define_trip_3(df_bindata), columns=['user_id', 'trip_num', 'duration'])
+    df_trip_3 = pd.DataFrame(data=define_trip_3(df_bindata), columns=['user_id', 'trip_num', 'duration'])
     # print(df_trip_3)
     #
-    # #N = 5
+    #N = 5
     # print('             ')
-    # df_trip_5 = pd.DataFrame(data=define_trip_5(df_bindata), columns=['user_id', 'trip_num', 'duration'])
+    df_trip_5 = pd.DataFrame(data=define_trip_5(df_bindata), columns=['user_id', 'trip_num', 'duration'])
     # print(df_trip_5)
+
+#### step 3 PlOT
+#### 1. plot curve
+
+
+#### 1.1 curve for trip num
+#### N = 1
+    df_counttrip_1 = get_tripnumber(df_trip_1)
+    # print(df_counttrip_1)
+
+#### N = 3
+    df_counttrip_3 = get_tripnumber(df_trip_3)
+    # print(df_counttrip_3)
+
+#### N = 5
+    df_counttrip_5 = get_tripnumber(df_trip_5)
+    # print(df_counttrip_5)
+
+    #plot
+    # N = 1
+    plt.plot(df_counttrip_1['count_trip'].values)
+    plt.ylabel('trip number')
+    # plt.show()
+    # N = 3
+    plt.plot(df_counttrip_3['count_trip'].values)
+    plt.ylabel('trip number')
+    # plt.show()
+    # N =5
+    plt.plot(df_counttrip_5['count_trip'].values)
+    plt.ylabel('trip number')
+    # show plot
+    plt.yscale('log')
+    plt.show()
+
+#### 1.2 curve for trip length
+    # N = 1
+    list_distance_1 = list(map(convert2distance, df_trip_1['trip_num'].values))
+    list_distance_1.sort()
+    plt.plot(list_distance_1)
+    plt.ylabel('trip length(over participant-trip)')
+
+    # N = 3
+    list_distance_3 = list(map(convert2distance, df_trip_3['trip_num'].values))
+    list_distance_3.sort()
+    plt.plot(list_distance_3)
+
+    # N = 5
+    list_distance_5 = list(map(convert2distance, df_trip_5['trip_num'].values))
+    list_distance_5.sort()
+    plt.plot(list_distance_5)
+
+    # show plot
+    plt.yscale('log')
+    plt.show()
+
+#### 1.3 curve for duration
+    # N = 1
+    list_duration_1 = df_trip_1['duration'].values
+    list_duration_1.sort()
+    plt.plot(list_duration_1)
+
+    # N = 3
+    list_duration_3 = df_trip_3['duration'].values
+    list_duration_3.sort()
+    plt.plot(list_duration_3)
+
+    # N = 5
+    list_duration_5 = df_trip_5['duration'].values
+    list_duration_5.sort()
+    plt.plot(list_duration_5)
+
+    # show plot
+    plt.yscale('log')
+    plt.show()
+
+
+#### 2. heatmap for trips
+#### N = 1
+    img_1 = plt.imshow(matrix_grid_1, cmap='hot')
+    plt.colorbar(img_1, orientation='horizontal')
+    plt.show()
+
+
+
