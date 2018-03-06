@@ -4,7 +4,6 @@ from scipy import stats, integrate
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(color_codes=True)
-
 import mysql.connector
 from mysql.connector import Error
 import pandas as pd
@@ -260,6 +259,7 @@ def define_trip(df_bin):
                 else:                  #trip ends
                     #1. calculate duration
                     duration = (time_end - time_start).total_seconds()/60
+                    #add to matrix
                     if (x_pre <= 170 and y_pre <= 170):
                         matrix_grid_1[int(x_pre)][int(y_pre)] = matrix_grid_1[int(x_pre)][int(y_pre)] + 1
                     #2. store one trip record
@@ -273,6 +273,7 @@ def define_trip(df_bin):
             else:                      #on the trip
                 time_end = row['record_time']
                 num_cells = num_cells + 1
+                # add to matrix
                 if(x_pre <= 170 and y_pre <= 170):
                     matrix_grid_1[int(x_pre)][int(y_pre)] = matrix_grid_1[int(x_pre)][int(y_pre)] + 1
                 x_pre = row['xBin']
@@ -286,6 +287,9 @@ def define_trip(df_bin):
     #          '''
 
 def define_trip_3(df_bin):
+    #global var
+    global matrix_grid_3
+
     list_triptable_3 = []   #a list to store the trip table, will be convert into dataframe later
     #1. get same id
     for id in df_bin['user_id'].unique():
@@ -307,6 +311,9 @@ def define_trip_3(df_bin):
                 # print("跟上一条在不同地方，trip中")
                 time_end = row['record_time']
                 num_cells = num_cells + 1
+                # add to matrix
+                if (x_pre <= 170 and y_pre <= 170):
+                    matrix_grid_1[int(x_pre)][int(y_pre)] = matrix_grid_1[int(x_pre)][int(y_pre)] + 1
                 x_pre = row['xBin']
                 y_pre = row['yBin']
                 stop = 1
@@ -325,6 +332,9 @@ def define_trip_3(df_bin):
                         # 2. store one trip record
                         list_onetrip = [row['user_id'], num_cells, duration]
                         #
+                        # add to matrix
+                        if (x_pre <= 170 and y_pre <= 170):
+                            matrix_grid_1[int(x_pre)][int(y_pre)] = matrix_grid_1[int(x_pre)][int(y_pre)] + 1
                         # print(list_onetrip, "....................................................................")
                         list_triptable_3.append(list_onetrip)
                         # 3. reset
@@ -444,6 +454,8 @@ if __name__ == '__main__':
     # print('             ')
     df_trip_3 = pd.DataFrame(data=define_trip_3(df_bindata), columns=['user_id', 'trip_num', 'duration'])
     # print(df_trip_3)
+    print('_________________________matrix N = 3_____________________________________________')
+    print(matrix_grid_3)
     #
     #N = 5
     # print('             ')
@@ -527,9 +539,14 @@ if __name__ == '__main__':
 
 #### 2. heatmap for trips
 #### N = 1
-    img_1 = plt.imshow(matrix_grid_1, cmap='hot')
+    img_1 = plt.imshow(matrix_grid_1, cmap='hot', vmin=0, vmax=250)
     plt.colorbar(img_1, orientation='horizontal')
     plt.show()
+
+#### N = 3
+    # img_3 = plt.imshow(matrix_grid_3, cmap='hot')
+    # plt.colorbar(img_3, orientation='horizontal')
+    # plt.show()
 
 
 
